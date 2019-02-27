@@ -1,0 +1,64 @@
+.vote {
+  background-color: $color-dark-grey;
+  grid-column: col-start 3 / col-end 9;
+  grid-row: 3 / -1;
+}
+
+.wrapper-vote {
+		display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 65rem;//control the width of the box
+    grid-template-rows: 5rem 5rem;
+    
+  }
+
+  .vote {
+    background-color: $color-black;
+
+    &__text {
+      grid-column: 1 / -1;
+      grid-row: 1 / 2;
+      justify-self: center;
+      justify-items: center;
+
+      padding: 1rem 0;
+      font-size: 2.5rem;
+      color: #888;
+    }
+
+    &__buttons {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        padding: 6px 20rem;
+        background-color: $color-dark-grey;
+
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 3rem;
+        align-self: center;
+
+        justify-self: center;
+
+        &--1 {
+          grid-column: 1 / 2;
+          grid-row: 1 / 2;
+          width: 70%;
+        }
+        &--2 {
+          grid-column: 2 / 3;
+          grid-row: 1 / 2;
+          width: 70%;
+        }
+        &--3 {
+          grid-column: 3 / 4;
+          grid-row: 1 / 2;
+          width: 70%;
+        }
+        &--4 {
+          grid-column: 4 / -1;
+          grid-row: 1 / 2;
+          width: 70%;
+        }
+      }
+  }

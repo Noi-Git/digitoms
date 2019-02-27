@@ -1,0 +1,24 @@
+.display {
+  background-color: $color-black;
+  grid-column: col-start 3 / col-end 9;
+  grid-row: 2 / -1;
+}
+
+.wrapper-display {
+		display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;//control the width of the box
+    grid-template-rows: 1fr;
+    // margin-top: 10%;
+		// background-color: $color-dark-grey;
+  }
+
+  .main {
+
+    &__image-1 {
+      grid-column: 1 / -1;
+      width: 80%;
+      justify-items: center;
+      align-items: center;
+    }
+  }

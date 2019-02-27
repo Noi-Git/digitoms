@@ -1,0 +1,56 @@
+.nav {
+  background-color: $color-black;
+  grid-column: center-start / center-end;
+  grid-row: 1 / 2;
+
+  display: grid;
+  grid-column: 40% 1fr;
+
+  border-bottom: 1px solid #333;
+  color: #888;
+
+  &__logo {
+    display: grid;
+    grid-row: 1 / 2;
+
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    justify-items: start;
+    align-self: center;
+
+    padding-left: 2rem;
+
+    &--main {
+      font-size: 3rem;
+      color: $color-blue;
+      text-transform: uppercase;
+      letter-spacing: 2.6rem;
+    }
+
+    &--tagline {
+      text-transform: uppercase;
+      margin-top: -3rem;
+      letter-spacing: .2rem;
+    }
+  } 
+
+    &__items {
+      display: grid;
+      grid-row: 2 / -1;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 1rem;
+      align-self: center; //center of the navigation bar
+      justify-items: end; //justify whole container to the right
+
+      font-size: 1.8rem;
+      padding-right: 2rem;
+      list-style: none;
+      
+    }
+
+    &__item {
+
+    }
+  }
+
+   
